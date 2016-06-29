@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/redeem', function ()
+{
+	return view('redeem');
+});
+
+Route::post('/redeem', 'UserController@store');
